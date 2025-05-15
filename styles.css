@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Comic Sans MS', sans-serif;
+  background: url('images/background.png') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.container {
+  text-align: center;
+  padding-top: 30px;
+  color: #84396b;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 28px;
+  margin: 10px 0;
+}
+
+p {
+  font-size: 18px;
+  color: #333;
+}
+
+.buttons button {
+  margin: 10px;
+  padding: 12px 20px;
+  background-color: #f78181;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.qrcode {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.qrcode img {
+  width: 250px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  background: #fff;
+  padding: 10px;
+}
+
+.qrcode .close {
+  background: #fff;
+  color: #f78181;
+  border: 2px solid #f78181;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
