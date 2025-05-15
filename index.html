@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jennifer's Candy House</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Baloo+2&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <img src="images/jennifer-logo.png" alt="Jennifer's Logo" class="logo" />
+    <h1 class="title">🎀 Jennifer's Candy House 🎀</h1>
+    <p class="subtitle">Please select a payment method</p>
+    <div class="buttons">
+      <button onclick="showQR('wechat')">WeChat Pay</button>
+      <button onclick="showQR('alipay')">Alipay</button>
+      <button onclick="showQR('qq')">QQ Wallet</button>
+      <button onclick="showQR('paynow')">PayNow</button>
+    </div>
+    <div class="qrcode" id="qrcode">
+      <img id="qr-img" src="" alt="QR Code"/>
+    </div>
+  </div>
+
+  <script>
+    function showQR(method) {
+      const qrImg = document.getElementById("qr-img");
+      const qrcodeDiv = document.getElementById("qrcode");
+      qrImg.src = `images/${method}-qrcode.png`;
+      qrcodeDiv.style.display = "block";
+    }
+  </script>
+</body>
+</html>
